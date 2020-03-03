@@ -222,6 +222,27 @@ function addStickyNote(){
 
 			  //document.getElementById('sticky').childNodes.addEventListener('mouseover', onHover);
 			  //document.getElementById('sticky').childNodes.addEventListener('mouseout', offHover);
+
+			  /**********************************************
+			  Create a new button element. This is for exporting the csv file of data.
+			  *****/
+			  var exportButton = document.createElement('button');
+				exportButton.innerHTML ="Export CSV Data";
+
+				exportButton.style.textAlign = "center"; 
+				exportButton.style.textDecoration = "none";
+				exportButton.style.background = "white";
+				exportButton.style.color = "black";
+				exportButton.style.marginLeft = "10%";
+			  	exportButton.style.marginRight = "1%";
+			  	exportButton.style.marginBottom = "10%";
+			  	exportButton.style.marginTop = "-8%";
+
+		  
+			 	document.getElementById("sticky").append(exportButton); 
+			 	exportButton.addEventListener ("click", function() {
+			          writeCSV();
+			     }); 
 	  
 
 			});//end of getGoal()
@@ -238,7 +259,6 @@ function addStickyNote(){
 
 //now that the functions have been defined, we're going to call upon them
 addStickyNote();
-writeCSV();//also write to a CSV
 
 
 

@@ -6,6 +6,7 @@ var allOn = 1;
 chrome.windows.onCreated.addListener(createWindowPackage);
 
 
+
 //get current window's id
 function getCurrentWinID(callback){
   var windId;
@@ -115,3 +116,32 @@ chrome.runtime.onMessage.addListener(
 });
 
 //___________________________________________________________________________________________
+
+
+
+
+function closeScript(){
+  //create a pop up module with a bunch of text fields 
+
+  var closeModule = document.createElement("div");
+        closeModule.style.display = "none"; /* Hidden by default */
+        closeModule.style.position = "fixed"; /* Stay in place */
+        closeModule.style.zIndex = "1"; /* Sit on top */
+        closeModule.style.left= "0";
+        closeModule.style.top= "0";
+        closeModule.style.width= "80%"; /* Full width */
+        closeModule.style.height= "80%"; /* Full height */
+        closeModule.style.overflow= "auto"; /* Enable scroll if needed */
+        closeModule.style.backgroundColor= "rgb(0,0,0)"; /* Fallback color */
+        closeModule.style.backgroundColor= "rgba(0,0,0,0.4)"; /* Black w/ opacity */
+
+        //add new element to the clear background
+        document.body.append(closeModule);
+
+
+
+  //Things: start time, end time, goal, subtasks
+}
+
+//chrome.windows.onClosed.addListener(closeScript);
+chrome.windows.onClosed.addListener(alert("hi"));
