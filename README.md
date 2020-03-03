@@ -6,7 +6,7 @@ Just like how people track what they eat, what effect that has on their bodies, 
 "A major source of error, especially memory-lapse errors, is interruption. When an activity is interrupted by some other event, the cost of the interruption is far greater than the loss of the time required to deal with the interruption: it is also the cost of resuming the interrupted activity. To resume, it is necessary to remember precisely the previous state of the activity: what the goal was, where one was in the action cycle, and the relevant state of the system. Most systems make it difficult to resume after an interruption." -- Design of Everyday Things, Don Norman.
 
 ## How to use
-1. Download zip file
+1. Download zip file by clicking "Clone or Download" button on this repository.
 2. Open up Google Chrome
 3. Go to chrome://extensions
 4. Put chrome in developer mode
