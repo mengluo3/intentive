@@ -1,7 +1,7 @@
 # Intentive
 A browser extension for attention management
 
-##How to use
+## How to use
 1. Download zip file
 2. Open up Google Chrome
 3. Go to chrome://extensions
