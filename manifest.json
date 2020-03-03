@@ -1,0 +1,41 @@
+{
+	"manifest_version": 2,
+	"name": "Editable Task Reminder",
+	"version": "0.2",
+	"permissions": [
+      "activeTab",
+      "declarativeContent",
+      "storage"
+    ],
+	"content_scripts": [
+		{
+			"matches": [
+				"<all_urls>"
+			],
+
+			"js": [
+				"content.js"
+			],
+
+			"permissions": [
+      			"activeTab",
+        		"notifications"
+    		]
+		}
+	],
+	"background": {
+  		"scripts": ["newWindow.js"]
+	},
+
+	"chrome_settings_overrides": {
+    	"homepage": "http://www.weiweihsu.com"
+  	},
+
+  	"permissions": [
+    	"contentSettings", "background"
+  	], 
+  	"browser_action": {
+  		"default_popup": "popup.html"
+  	}
+
+}
